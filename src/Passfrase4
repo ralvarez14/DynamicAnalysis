@@ -1,0 +1,37 @@
+/**
+
+ * Created by ralvarez14 on 10/7/17.
+
+ */
+import java.util.Scanner;
+public class Passphrase4 {
+
+   boolean ret = false;
+   int num1;
+   char char1;
+   int num2;
+   char char2;
+
+    public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Trigger 3 defused. The Bad scientist is getting nervous! Next?");
+    num1 = sc.nextInt();
+    char1 = sc.next().charAt(1);
+    num2 = sc.nextInt();
+    char2 = sc.next().charAt(3);
+    if(num1 == 8 && char1.equals('x') && num2 == 20 && char2.equals('a')
+        ret = true;
+    else if(num1 == 8 && char1.equals('x') && num2 == 30 && char2.equals('c')
+        ret = true;
+    else if(num1 == 11 && char1.equals('x') && num2 ==5 && char2.equals('r')
+        ret = true;
+    else if(num1 == 21 && char1.equals('x') && num2 ==21 && char2.equals('r')
+        ret = true;
+        
+    if(ret){
+      System.out.println("Trigger 4 defused. You are doing great! What about the next one?");
+    else{
+       System.out.println("Wrong. The earth has been destroyed! Just kidding... try again and dont get discouraged!");
+    }
+  }// end of main
+}
